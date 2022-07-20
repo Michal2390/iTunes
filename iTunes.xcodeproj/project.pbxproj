@@ -15,6 +15,8 @@
 		866DD79C2887E65D0095C784 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 866DD79B2887E65D0095C784 /* Assets.xcassets */; };
 		866DD79F2887E65D0095C784 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 866DD79D2887E65D0095C784 /* LaunchScreen.storyboard */; };
 		866DD7A9288863840095C784 /* MusicService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866DD7A8288863840095C784 /* MusicService.swift */; };
+		866DD7AB28886D950095C784 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866DD7AA28886D950095C784 /* Song.swift */; };
+		866DD7AD28886DAA0095C784 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866DD7AC28886DAA0095C784 /* Response.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		866DD79E2887E65D0095C784 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		866DD7A02887E65D0095C784 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		866DD7A8288863840095C784 /* MusicService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicService.swift; sourceTree = "<group>"; };
+		866DD7AA28886D950095C784 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		866DD7AC28886DAA0095C784 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,8 @@
 				866DD7912887E65C0095C784 /* SceneDelegate.swift */,
 				866DD7932887E65C0095C784 /* ViewController.swift */,
 				866DD7A8288863840095C784 /* MusicService.swift */,
+				866DD7AA28886D950095C784 /* Song.swift */,
+				866DD7AC28886DAA0095C784 /* Response.swift */,
 				866DD7952887E65C0095C784 /* Main.storyboard */,
 				866DD79B2887E65D0095C784 /* Assets.xcassets */,
 				866DD79D2887E65D0095C784 /* LaunchScreen.storyboard */,
@@ -144,11 +150,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				866DD7AB28886D950095C784 /* Song.swift in Sources */,
 				866DD7942887E65C0095C784 /* ViewController.swift in Sources */,
 				866DD7A9288863840095C784 /* MusicService.swift in Sources */,
 				866DD7902887E65C0095C784 /* AppDelegate.swift in Sources */,
 				866DD7922887E65C0095C784 /* SceneDelegate.swift in Sources */,
 				866DD79A2887E65C0095C784 /* iTunes.xcdatamodeld in Sources */,
+				866DD7AD28886DAA0095C784 /* Response.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
