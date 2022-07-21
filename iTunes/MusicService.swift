@@ -9,25 +9,41 @@ import Foundation
 
 class MusicService {
     
-    func cosTam(searchText: String = "sia+alive") {
+    func search(searchText: String = "jack") {
         guard let url = URL(string: "https://itunes.apple.com/search?term=\(searchText)") else { return }
         
         let session = URLSession.shared
-        
-        session.dataTask(with: url) { data, response, error in
-            // tu się wszystko dzieje
+        session.dataTask(with: url) { (data, response, error) in
+            guard let data = data else { return }
+            do {
+                let response = try JSONDecoder().decode(Response.self, from: data)
+                
+                print(response)
+            } catch {
+                print("Michał: \(error.localizedDescription)")
+            }
             
             if let error = error {
-                print(error)
+                print("Michał2: \(error.localizedDescription)")
             }
-                
-                
-            guard let data = data else { return }
-            let jsonDecoder = JSONDecoder()
             
-           
-            
-            //zadanie printowamie pobranych obiektów
-        }
+        }.resume()
+
     }
+    
+    func cos() {
+        guard let filePath = Bundle.main.url(forResource: "file", withExtension: "txt") else { return }
+        do {
+            let data = try Data(contentsOf: filePath)
+            let response = try JSONDecoder().decode(Response.self, from: data)
+            
+            print(response)
+        }
+        catch {
+            print("Michał: \(error.localizedDescription)")
+        }
+
+    }
+    
 }
+

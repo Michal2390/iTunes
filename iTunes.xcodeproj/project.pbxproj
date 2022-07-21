@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		864A701B2889C33F00B665AA /* file.txt in Resources */ = {isa = PBXBuildFile; fileRef = 864A701A2889C33E00B665AA /* file.txt */; };
+		864A701D2889C52D00B665AA /* Explicitness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864A701C2889C52D00B665AA /* Explicitness.swift */; };
+		864A701F2889C5B800B665AA /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864A701E2889C5B800B665AA /* Country.swift */; };
+		864A70212889C5FB00B665AA /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864A70202889C5FB00B665AA /* Currency.swift */; };
+		864A70232889C63500B665AA /* Kind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864A70222889C63500B665AA /* Kind.swift */; };
+		864A70252889C6AE00B665AA /* WrapperType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864A70242889C6AE00B665AA /* WrapperType.swift */; };
+		864A70282889D61C00B665AA /* CodingKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864A70272889D61C00B665AA /* CodingKeys.swift */; };
 		866DD7902887E65C0095C784 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866DD78F2887E65C0095C784 /* AppDelegate.swift */; };
 		866DD7922887E65C0095C784 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866DD7912887E65C0095C784 /* SceneDelegate.swift */; };
 		866DD7942887E65C0095C784 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866DD7932887E65C0095C784 /* ViewController.swift */; };
@@ -20,6 +27,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		864A701A2889C33E00B665AA /* file.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = file.txt; sourceTree = "<group>"; };
+		864A701C2889C52D00B665AA /* Explicitness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Explicitness.swift; sourceTree = "<group>"; };
+		864A701E2889C5B800B665AA /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		864A70202889C5FB00B665AA /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		864A70222889C63500B665AA /* Kind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kind.swift; sourceTree = "<group>"; };
+		864A70242889C6AE00B665AA /* WrapperType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrapperType.swift; sourceTree = "<group>"; };
+		864A70272889D61C00B665AA /* CodingKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingKeys.swift; sourceTree = "<group>"; };
 		866DD78C2887E65C0095C784 /* iTunes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		866DD78F2887E65C0095C784 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		866DD7912887E65C0095C784 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +59,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		864A70262889C73700B665AA /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				864A701E2889C5B800B665AA /* Country.swift */,
+				864A70202889C5FB00B665AA /* Currency.swift */,
+				864A701C2889C52D00B665AA /* Explicitness.swift */,
+				864A70222889C63500B665AA /* Kind.swift */,
+				864A70242889C6AE00B665AA /* WrapperType.swift */,
+				864A70272889D61C00B665AA /* CodingKeys.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
 		866DD7832887E65C0095C784 = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +97,8 @@
 				866DD7A8288863840095C784 /* MusicService.swift */,
 				866DD7AA28886D950095C784 /* Song.swift */,
 				866DD7AC28886DAA0095C784 /* Response.swift */,
+				864A70262889C73700B665AA /* Enums */,
+				864A701A2889C33E00B665AA /* file.txt */,
 				866DD7952887E65C0095C784 /* Main.storyboard */,
 				866DD79B2887E65D0095C784 /* Assets.xcassets */,
 				866DD79D2887E65D0095C784 /* LaunchScreen.storyboard */,
@@ -137,6 +166,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				864A701B2889C33F00B665AA /* file.txt in Resources */,
 				866DD79F2887E65D0095C784 /* LaunchScreen.storyboard in Resources */,
 				866DD79C2887E65D0095C784 /* Assets.xcassets in Resources */,
 				866DD7972887E65C0095C784 /* Main.storyboard in Resources */,
@@ -150,10 +180,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				864A701D2889C52D00B665AA /* Explicitness.swift in Sources */,
+				864A701F2889C5B800B665AA /* Country.swift in Sources */,
+				864A70282889D61C00B665AA /* CodingKeys.swift in Sources */,
 				866DD7AB28886D950095C784 /* Song.swift in Sources */,
+				864A70232889C63500B665AA /* Kind.swift in Sources */,
 				866DD7942887E65C0095C784 /* ViewController.swift in Sources */,
 				866DD7A9288863840095C784 /* MusicService.swift in Sources */,
 				866DD7902887E65C0095C784 /* AppDelegate.swift in Sources */,
+				864A70252889C6AE00B665AA /* WrapperType.swift in Sources */,
+				864A70212889C5FB00B665AA /* Currency.swift in Sources */,
 				866DD7922887E65C0095C784 /* SceneDelegate.swift in Sources */,
 				866DD79A2887E65C0095C784 /* iTunes.xcdatamodeld in Sources */,
 				866DD7AD28886DAA0095C784 /* Response.swift in Sources */,
