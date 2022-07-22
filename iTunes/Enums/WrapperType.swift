@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum WrapperType: String, Codable{
+enum WrapperType: String, Codable {
     case audiobook = "audiobook"
-    case track = "track"  //czemu to jest niby słowo klucz?
+    case track = "track"
 }

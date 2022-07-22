@@ -16,7 +16,7 @@ class MusicService {
         session.dataTask(with: url) { (data, response, error) in
             guard let data = data else { return }
             do {
-                let response = try JSONDecoder().decode(Response.self, from: data)
+                let response = try JSONDecoder().decode([Response].self, from: data)
                 
                 print(response)
             } catch {
@@ -40,7 +40,7 @@ class MusicService {
             print(response)
         }
         catch {
-            print("Michał: \(error.localizedDescription)")
+            print(String(describing: error)) //changed debuggin' text
         }
 
     }

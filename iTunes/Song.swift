@@ -8,35 +8,34 @@
 import Foundation
 
 struct Song: Decodable {
-    let wrapperType: WrapperType
-    let kind: Kind?
-    let artistID: Int?
-    let collectionID: Int?
-    let trackID: Int?
-    let artistName: String?
-    let collectionName: String?
-    let trackName: String
-    let collectionCensoredName: String?
-    let trackCensoredName: String?
-    let artistViewUrl: String?
-    let collectionViewUrl: String?
-    let trackViewUrl: String?
-    let previewUrl: String?
-    let artworkUrl30: String?
-    let artworkUrl60: String
-    let artworkUrl100: String
-    let collectionPrice: Double
-    let trackPrice: Double?
-    let releaseDate: Date
-    let collectionExplicitness: Explicitness
-    let trackExplicitness: Explicitness?
-    let discCount: Int?
-    let discNumber: Int?
-    let trackCount: Int?
-    let trackNumber: Int?
-    let trackTimeMillis: Int?
-    let country: Country
-    let currency: Currency
-    let primaryGenreName: String
-    let isStreamable: Bool?
+        let wrapperType: WrapperType
+        let kind: Kind?
+        let collectionID, trackID: Int?
+        let artistName: String
+        let collectionName, trackName, collectionCensoredName, trackCensoredName: String?
+        let collectionArtistID: Int?
+        let collectionArtistViewURL, collectionViewURL, trackViewURL: String?
+        let previewURL: String?
+        let artworkUrl30: String?
+        let artworkUrl60, artworkUrl100: String
+        let collectionPrice: Double
+        let trackPrice, trackRentalPrice, collectionHDPrice, trackHDPrice: Double?
+        let trackHDRentalPrice: Double?
+        let releaseDate: String?
+        let collectionExplicitness: Explicitness
+        let trackExplicitness: Explicitness?
+        let discCount, discNumber, trackCount, trackNumber: Int?
+        let trackTimeMillis: Int?
+        let country: Country
+        let currency: Currency
+        let primaryGenreName: String
+        let contentAdvisoryRating, shortDescription, longDescription: String?
+        let hasITunesExtras: Bool?
+        let artistID: Int?
+        let artistViewURL: String?
+        let isStreamable: Bool?
+        let feedURL: String?
+        let artworkUrl600: String?
+        let genreIDS, genres: [String]?
+        let resultDescription, copyright, collectionArtistName: String?
 }
