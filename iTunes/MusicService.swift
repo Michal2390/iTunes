@@ -35,7 +35,8 @@ class MusicService {
         guard let filePath = Bundle.main.url(forResource: "file", withExtension: "txt") else { return }
         do {
             let data = try Data(contentsOf: filePath)
-            let response = try JSONDecoder().decode(Response.self, from: data)
+            let decoder = JSONDecoder()
+            let response = try decoder.decode(Response.self, from: data)
             
             print(response)
         }
@@ -45,5 +46,10 @@ class MusicService {
 
     }
     
+    
+    
 }
+
+//jak najlepiej robic pull request - przez github desktop czy .com czy konsole?
+
 

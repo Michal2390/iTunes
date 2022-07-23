@@ -8,27 +8,34 @@
 import Foundation
 
 enum CodingKeys: String, CodingKey {
-        case wrapperType, kind
-        case collectionID = "collectionId"
-        case trackID = "trackId"
-        case artistName, collectionName, trackName, collectionCensoredName, trackCensoredName
-        case collectionArtistID = "collectionArtistId"
-        case collectionArtistViewURL = "collectionArtistViewUrl"
-        case collectionViewURL = "collectionViewUrl"
-        case trackViewURL = "trackViewUrl"
-        case previewURL = "previewUrl"
-        case artworkUrl30, artworkUrl60, artworkUrl100, collectionPrice, trackPrice, trackRentalPrice
-        case collectionHDPrice = "collectionHdPrice"
-        case trackHDPrice = "trackHdPrice"
-        case trackHDRentalPrice = "trackHdRentalPrice"
-        case releaseDate, collectionExplicitness, trackExplicitness, discCount, discNumber, trackCount, trackNumber, trackTimeMillis, country, currency, primaryGenreName, contentAdvisoryRating, shortDescription, longDescription, hasITunesExtras
-        case artistID = "artistId"
-        case artistViewURL = "artistViewUrl"
-        case isStreamable
-        case feedURL = "feedUrl"
-        case artworkUrl600
-        case genreIDS = "genreIds"
-        case genres
-        case resultDescription = "description"
-        case copyright, collectionArtistName
-    }
+    case wrapperType, kind
+    case collectionID = "collectionId"
+    case trackID = "trackId"
+    case artistName, collectionName, trackName, collectionCensoredName, trackCensoredName
+    case collectionArtistID = "collectionArtistId"
+    case collectionArtistViewURL = "collectionArtistViewUrl"
+    case collectionViewURL = "collectionViewUrl"
+    case trackViewURL = "trackViewUrl"
+    case previewURL = "previewUrl"
+    case artworkUrl30, artworkUrl60, artworkUrl100, collectionPrice, trackPrice, trackRentalPrice
+    case collectionHDPrice = "collectionHdPrice"
+    case trackHDPrice = "trackHdPrice"
+    case trackHDRentalPrice = "trackHdRentalPrice"
+    case releaseDate, collectionExplicitness, trackExplicitness, discCount, discNumber, trackCount, trackNumber, trackTimeMillis, country, currency, primaryGenreName, contentAdvisoryRating, shortDescription, longDescription, hasITunesExtras
+    case artistID = "artistId"
+    case artistViewURL = "artistViewUrl"
+    case isStreamable
+    case feedURL = "feedUrl"
+    case artworkUrl600
+    case genreIDS = "genreIds"
+    case genres
+    case resultDescription = "description"
+    case copyright, collectionArtistName
+}
+
+
+
+//Wywakić do innego PLisku i nazwać go Extension+JSONDecoder
+
+
+//Wywakić do innego PLisku i nazwać go Extension+DateFormatter
