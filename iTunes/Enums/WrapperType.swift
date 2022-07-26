@@ -1,0 +1,13 @@
+//
+//  WrapperType.swift
+//  iTunes
+//
+//  Created by Michal Fereniec on 21/07/2022.
+//
+
+import Foundation
+
+enum WrapperType: String, Codable {
+    case audiobook
+    case track
+}
