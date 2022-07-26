@@ -8,6 +8,6 @@
 import Foundation
 
 enum WrapperType: String, Codable {
-    case audiobook = "audiobook"
-    case track = "track"
+    case audiobook
+    case track
 }

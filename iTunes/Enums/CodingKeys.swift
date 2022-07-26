@@ -21,7 +21,9 @@ enum CodingKeys: String, CodingKey {
     case collectionHDPrice = "collectionHdPrice"
     case trackHDPrice = "trackHdPrice"
     case trackHDRentalPrice = "trackHdRentalPrice"
-    case releaseDate, collectionExplicitness, trackExplicitness, discCount, discNumber, trackCount, trackNumber, trackTimeMillis, country, currency, primaryGenreName, contentAdvisoryRating, shortDescription, longDescription, hasITunesExtras
+    case releaseDate, collectionExplicitness, trackExplicitness, discCount, discNumber, trackCount, trackNumber
+    case trackTimeMillis, country, currency
+    case primaryGenreName, contentAdvisoryRating, shortDescription, longDescription, hasITunesExtras
     case artistID = "artistId"
     case artistViewURL = "artistViewUrl"
     case isStreamable
@@ -32,10 +34,3 @@ enum CodingKeys: String, CodingKey {
     case resultDescription = "description"
     case copyright, collectionArtistName
 }
-
-
-
-//Wywakić do innego PLisku i nazwać go Extension+JSONDecoder
-
-
-//Wywakić do innego PLisku i nazwać go Extension+DateFormatter

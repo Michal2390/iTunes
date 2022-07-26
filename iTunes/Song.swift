@@ -3,7 +3,6 @@
 //  iTunes
 //
 //  Created by Michal Fereniec on 20/07/2022.
-//
 
 import Foundation
 
@@ -21,7 +20,6 @@ struct Song: Decodable {
     let collectionPrice: Double
     let trackPrice, trackRentalPrice, collectionHDPrice, trackHDPrice: Double?
     let trackHDRentalPrice: Double?
-    let releaseDate: Date? // Zamiana z string na date
     let collectionExplicitness: Explicitness
     let trackExplicitness: Explicitness?
     let discCount, discNumber, trackCount, trackNumber: Int?

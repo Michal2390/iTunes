@@ -8,7 +8,7 @@
 import Foundation
 
 enum Explicitness: String, Codable {
-    case cleaned = "cleaned"
-    case explicit = "explicit"
-    case notExplicit = "notExplicit"
+    case cleaned
+    case explicit
+    case notExplicit
 }
