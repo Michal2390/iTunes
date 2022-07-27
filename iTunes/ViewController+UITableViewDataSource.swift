@@ -16,7 +16,6 @@ extension ViewController: UITableViewDataSource {
         cell.textLabel?.text = song.trackName
         cell.detailTextLabel?.text = song.artistName
         cell.accessoryType = .disclosureIndicator
-//        cell.imageView?.image = UIImage(named: song.imageName)
         cell.textLabel?.font = UIFont(name: "Helvetica-Bold", size: 18)
         cell.detailTextLabel?.font = UIFont(name: "Helvetica", size: 17)
         

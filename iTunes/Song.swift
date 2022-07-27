@@ -36,10 +36,4 @@ struct Song: Decodable {
     let artworkUrl600: String?
     let genreIDS, genres: [String]?
     let resultDescription, copyright, collectionArtistName: String?
-    
-//                   let name: String
-//                   let albumName: String
-//                    let artistName: String
-//                    let imageName: String
-//                   let trackName: String
 }

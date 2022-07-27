@@ -16,12 +16,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         songs.append(contentsOf: MusicService().cos()?.results ?? [])
-
         table.delegate = self
         table.dataSource = self
-
-//        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
-//            self.table.reloadData()
-//        }
     }
 }
