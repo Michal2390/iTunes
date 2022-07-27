@@ -7,22 +7,21 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-   
+class ViewController: UIViewController {
+
     @IBOutlet var table: UITableView!
-    
-    var songs = [Song]()
-    
+
+    var songs: [Song] = []
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        MusicService().cos()
-        configureSongs()
+        songs.append(contentsOf: MusicService().cos()?.results ?? [])
+
         table.delegate = self
         table.dataSource = self
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-                    self.table.reloadData()
-            }
+
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+//            self.table.reloadData()
+//        }
     }
-   
 }

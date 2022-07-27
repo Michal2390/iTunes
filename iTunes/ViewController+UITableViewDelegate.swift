@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-extension ViewController {
+extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let position = indexPath.row
